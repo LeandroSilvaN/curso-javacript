@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400..700&display=swap');
+
+:root {
+    --primary-color: rgb(128, 198, 226);
+    --primary-color-dark: rgb(61, 96, 110);
+    --primary-color-active: rgb(32, 179, 236);
+    --primary-color-hover: rgb(148, 174, 184);
+    --font-principal: Montserrat;
+}
+
+* {
+    box-sizing: border-box;
+    outline: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--primary-color);
+    font-family: var(--font-principal), sans-serif;
+    font-size: 1.3em;
+    line-height: 1.5em;
+}
+
+.container {
+    max-width: 700px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 255, 213, 0.788);
+    text-align: center;
+}
+
+form input,
+form label,
+form button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+form input {
+    font-size: 24px;
+    height: 50px;
+    padding: 0 20px;
+}
+
+form input:focus {
+    outline: 1px solid var(--primary-color);
+}
+
+form button {
+    border: none;
+    border-radius: 20px;
+    background: var(--primary-color);
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 20px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: var(--primary-color-dark);
+}
+
+form button:active {
+    background: var(--primary-color-active);
+}
+
+.relogio {
+    font-size: 2.5em;
+}
+
+button {
+    background-color: var(--primary-color);
+    color: #fff;
+    border: 1px solid var(--primary-color-active);
+    padding: 1em;
+    border-radius: 1em;
+}
+
+button:hover {
+    background-color: var(--primary-color-hover);
+}
+
+button:active {
+    background-color: var(--primary-color-active);
+}
+
+.pausado {
+    color: red;
+}

@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400..700&display=swap');
+
+:root {
+    --primary-color: rgb(128, 198, 226);
+    --primary-color-dark: rgb(61, 96, 110);
+    --primary-color-active: rgb(11, 62, 83);
+    --font-principal: Montserrat;
+}
+
+* {
+    box-sizing: border-box;
+    outline: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--primary-color);
+    font-family: var(--font-principal), sans-serif;
+    font-size: 1.3em;
+    line-height: 1.5em;
+}
+
+.container {
+    max-width: 700px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 255, 213, 0.788);
+}
+
+h1 {
+    display: flex;
+    align-items: center;
+}
+
+.input-tarefa {
+    width: 65%;
+    padding: 0.5em 1em;
+    font-size: 16px;
+    border-radius: 20px;
+    border: 2px solid var(--primary-color-dark);
+    background: #f5f7f8;
+    transition: all 0.3s ease;
+    margin-right: 0.2em;
+}
+
+.input-tarefa:focus {
+    border-color: var(--primary-color-active);
+    background: #fff;
+    box-shadow: 0 0 8px rgba(32, 179, 236, 0.4);
+}
+
+p {
+    display: flex;
+    gap: 10px;
+}
+
+input:focus {
+    outline: 1px solid var(--primary-color);
+}
+
+button {
+    border: none;
+    border-radius: 20px;
+    background: var(--primary-color);
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 0.5em;
+    cursor: pointer;
+}
+
+button:hover {
+    background: var(--primary-color-dark);
+}
+
+button:active {
+    background: var(--primary-color-active);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 1em;
+}
+
+.apagar {
+    background-color: rgb(231, 69, 69);
+}
+
+.apagar:active {
+    background-color: rgb(97, 28, 28);
+}
+
+@media (max-width: 800px) {
+
+    body {
+        font-size: 1em;
+    }
+
+    .container {
+        margin: 15px;
+        padding: 15px;
+    }
+
+    p {
+        flex-direction: column;
+    }
+
+    .input-tarefa {
+        width: 100%;
+        margin-right: 0;
+        font-size: 1rem;
+    }
+
+    .btn-tarefa {
+        width: 50%;
+        font-size: 1rem;
+    }
+}
